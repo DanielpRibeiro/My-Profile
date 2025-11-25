@@ -1,0 +1,85 @@
+flowchart LR
+    %% COLUNA 1 - COORDENADOR
+    A[COORDENADOR DIGITAL<br>Daniel Ribeiro]
+    
+    %% COLUNA 2 - ÁREAS PRINCIPAIS
+    A --> B[Gestão Estratégica<br>e Análise]
+    A --> C[Marketing Digital<br>e Vendas]
+    A --> D[Design e Produção<br>Criativa]
+    A --> E[Desenvolvimento<br>e Tecnologia]
+    A --> F[Infraestrutura<br>e Sistemas]
+    A --> G[Suporte e<br>Operações]
+    
+    %% COLUNA 3 - SUBÁREAS DA GESTÃO
+    B --> B1[Dashboards e<br>Relatórios]
+    B --> B2[Análise de<br>Performance]
+    B --> B3[Consolidação<br>de Dados]
+    
+    %% COLUNA 3 - SUBÁREAS DO MARKETING
+    C --> C1[Gestão de<br>Tráfego Pago]
+    C --> C2[E-commerce]
+    C --> C3[Conteúdo Redes<br>Sociais]
+    C --> C4[Conteúdo Sites<br>e Blog]
+    C --> C5[Comunicação<br>Institucional]
+    
+    %% COLUNA 3 - SUBÁREAS DO DESIGN
+    D --> D1[Design<br>Gráfico]
+    D --> D2[Identidade<br>Visual]
+    D --> D3[Sinalização e<br>Uniformes]
+    D --> D4[Materiais<br>de RH]
+    D --> D5[Produção<br>de Vídeo]
+    
+    %% COLUNA 3 - SUBÁREAS DO DESENVOLVIMENTO
+    E --> E1[Prototipação<br>e UX/UI]
+    E --> E2[Desenvolvimento<br>Sites]
+    E --> E3[Testes e<br>Qualidade]
+    E --> E4[Deploy e<br>Implementação]
+    E --> E5[Automações e<br>Sistemas]
+    
+    %% COLUNA 3 - SUBÁREAS DA INFRAESTRUTURA
+    F --> F1[Hospedagem e<br>Servidores]
+    F --> F2[Gestão de<br>Domínios]
+    F --> F3[Backup e<br>Segurança]
+    
+    %% COLUNA 3 - SUBÁREAS DO SUPORTE
+    G --> G1[Atendimento e<br>Suporte]
+    G --> G2[Monitoramento<br>Digital]
+    G --> G3[Processos<br>Administrativos]
+    
+    %% CONEXÕES HORIZONTAIS ENTRE SUBÁREAS
+    B1 -.->|Alimenta dados| C1
+    B2 -.->|Otimiza| C2
+    C3 -.->|Fornece conteúdo| D1
+    C4 -.->|Demanda desenvolvimento| E2
+    D1 -.->|Implementa designs| E2
+    E2 -.->|Publica em| F1
+    F1 -.->|Disponibiliza para| G1
+    G1 -.->|Coleta feedback para| B2
+    
+    %% CONEXÕES CRUZADAS ADICIONAIS
+    D4 -.->|Integra com| G1
+    E5 -.->|Automatiza| G3
+    F2 -.->|Suporta| E2
+    F3 -.->|Protege| F1
+    
+    %% FLUXO DE COMUNICAÇÃO INSTITUCIONAL
+    B -.->|Divulga resultados| C5
+    B2 -.->|Fornece métricas para| C5
+    C5 -.->|Publica atualizações| C4
+    C4 -.->|Comunica ao mercado| G1
+
+    classDef coordenador fill:#1e3a8a,color:#fff,stroke:#000,stroke-width:2px
+    classDef gestao fill:#f59e0b,color:#fff,stroke:#000,stroke-width:2px
+    classDef marketing fill:#10b981,color:#fff,stroke:#000,stroke-width:2px
+    classDef design fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:2px
+    classDef dev fill:#ef4444,color:#fff,stroke:#000,stroke-width:2px
+    classDef infra fill:#f97316,color:#fff,stroke:#000,stroke-width:2px
+    classDef suporte fill:#06b6d4,color:#fff,stroke:#000,stroke-width:2px
+
+    class A coordenador
+    class B,B1,B2,B3 gestao
+    class C,C1,C2,C3,C4,C5 marketing
+    class D,D1,D2,D3,D4,D5 design
+    class E,E1,E2,E3,E4,E5 dev
+    class F,F1,F2,F3 infra
+    class G,G1,G2,G3 suporte
