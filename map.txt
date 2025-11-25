@@ -5,44 +5,30 @@ flowchart TD
     A --> E[Desenvolvimento e Tecnologia]
     A --> F[Infraestrutura e Sistemas]
     A --> G[Suporte e Operações]
-   
-    %% GESTÃO ESTRATÉGICA - TODOS LARANJA
     B --> B1[Dashboards e Relatórios<br>Power BI, Excel, Google Analytics]
     B --> B2[Análise de Performance<br>Meta Ads, Google Ads, ROI]
     B --> B3[Consolidação de Dados<br>Planilhas, Apresentações]
-   
-    %% MARKETING DIGITAL - TODOS VERDE
     C --> C1[Gestão de Tráfego Pago<br>Meta Ads, Google Ads]
     C --> C2[E-commerce<br>Tray, Vindi, Checkout]
     C --> C3[Conteúdo Redes Sociais<br>Instagram, Facebook, LinkedIn]
     C --> C4[Conteúdo Sites e Blog<br>SEO, Landing Pages]
     C --> C5[Comunicação Institucional<br>Releases, Matérias]
-   
-    %% DESIGN E PRODUÇÃO - TODOS ROXO
     D --> D1[Design Gráfico<br>Peças Redes Sociais, Banners]
     D --> D2[Identidade Visual<br>Logos, Manual da Marca]
     D --> D3[Sinalização e Uniformes<br>Placas, Materiais Físicos]
     D --> D4[Materiais de RH<br>Cards Vagas, Crachás, Organogramas]
     D --> D5[Produção de Vídeo<br>Reels, Edição - CapCut, Premiere]
-   
-    %% DESENVOLVIMENTO - TODOS VERMELHO
     E --> E1[Prototipação e UX/UI<br>Figma, Wireframes]
     E --> E2[Desenvolvimento Sites<br>WordPress, HTML/CSS/PHP]
     E --> E3[Testes e Qualidade<br>Correção de Bugs, Otimização]
     E --> E4[Deploy e Implementação<br>Publicação, Migração]
     E --> E5[Automações e Sistemas<br>Scripts PHP, Sistemas Internos]
-   
-    %% INFRAESTRUTURA - TODOS LARANJA ESCURO
     F --> F1[Hospedagem e Servidores<br>Configuração, Performance]
     F --> F2[Gestão de Domínios<br>DNS, SSL, Redirecionamentos]
     F --> F3[Backup e Segurança<br>Recuperação, Continuidade]
-   
-    %% SUPORTE E OPERAÇÕES - TODOS AZUL
     G --> G1[Atendimento e Suporte<br>E-mails, WhatsApp, SAC]
     G --> G2[Monitoramento Digital<br>Reclame Aqui, Reviews]
     G --> G3[Processos Administrativos<br>Cotação, Compras, Orçamentos]
-   
-    %% CONEXÕES ESTRATÉGICAS - CORES POR ÁREA
     B1 -.->|Alimenta dados| C1
     B2 -.->|Otimiza| C2
     C3 -.->|Fornece conteúdo| D1
@@ -51,163 +37,34 @@ flowchart TD
     E2 -.->|Publica em| F1
     F1 -.->|Disponibiliza para| G1
     G1 -.->|Coleta feedback para| B2
-   
-    %% CONEXÕES CRUZADAS
     D4 -.->|Integra com| G1
     E5 -.->|Automatiza| G3
     F2 -.->|Suporta| E2
     F3 -.->|Protege| F1
-   
-    %% ESTILOS - CORES PRINCIPAIS (FORTES)
-    style A fill:#1e3a8a,color:#fff,stroke:#000,stroke-width:4px
-    style B fill:#f59e0b,color:#000,stroke:#000,stroke-width:2px
-    style C fill:#10b981,color:#fff,stroke:#000,stroke-width:2px
-    style D fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:2px
-    style E fill:#ef4444,color:#fff,stroke:#000,stroke-width:2px
-    style F fill:#f97316,color:#fff,stroke:#000,stroke-width:2px
-    style G fill:#06b6d4,color:#fff,stroke:#000,stroke-width:2px
-   
-    %% GESTÃO
-    style B1 fill:#fbbf24,color:#000,stroke:#000,stroke-width:1px
-    style B2 fill:#fbbf24,color:#000,stroke:#000,stroke-width:1px
-    style B3 fill:#fbbf24,color:#000,stroke:#000,stroke-width:1px
-    style C1 fill:#fbbf24,color:#000,stroke:#000,stroke-width:1px
+    C1 -.->|Gera dados para| B1
+    E3 -.->|Valida qualidade de| C4
+    D5 -.->|Fornece vídeos para| C3
+    B3 -.->|Consolida dados de| C2
+    G2 -.->|Coleta insights para| B2
+    E1 -.->|Projeta interfaces para| E2
+    F2 -.->|Configura domínios para| F1
+    B -.->|Divulga resultados| C5
+    B2 -.->|Fornece métricas para| C5
+    C5 -.->|Publica atualizações| C4
+    C4 -.->|Comunica ao mercado| G1
 
+    classDef coordenador fill:#1e3a8a,color:#fff
+    classDef gestao fill:#f59e0b,color:#fff
+    classDef marketing fill:#10b981,color:#fff
+    classDef design fill:#8b5cf6,color:#fff
+    classDef dev fill:#ef4444,color:#fff
+    classDef infra fill:#f97316,color:#fff
+    classDef suporte fill:#06b6d4,color:#fff
 
-    %% MKT
-
-
-    style C2 fill:#34d399,color:#000,stroke:#000,stroke-width:1px
-    style C3 fill:#34d399,color:#000,stroke:#000,stroke-width:1px
-    style C4 fill:#34d399,color:#000,stroke:#000,stroke-width:1px
-    style C5 fill:#34d399,color:#000,stroke:#000,stroke-width:1px
-   
-    style D1 fill:#a78bfa,color:#000,stroke:#000,stroke-width:1px
-    style D2 fill:#a78bfa,color:#000,stroke:#000,stroke-width:1px
-    style D3 fill:#a78bfa,color:#000,stroke:#000,stroke-width:1px
-    style D4 fill:#a78bfa,color:#000,stroke:#000,stroke-width:1px
-    style D5 fill:#a78bfa,color:#000,stroke:#000,stroke-width:1px
-   
-    style E1 fill:#f87171,color:#000,stroke:#000,stroke-width:1px
-    style E2 fill:#f87171,color:#000,stroke:#000,stroke-width:1px
-    style E3 fill:#f87171,color:#000,stroke:#000,stroke-width:1px
-    style E4 fill:#f87171,color:#000,stroke:#000,stroke-width:1px
-    style E5 fill:#f87171,color:#000,stroke:#000,stroke-width:1px
-   
-    style F1 fill:#fb923c,color:#000,stroke:#000,stroke-width:1px
-    style F2 fill:#fb923c,color:#000,stroke:#000,stroke-width:1px
-    style F3 fill:#fb923c,color:#000,stroke:#000,stroke-width:1px
-   
-    style G1 fill:#22d3ee,color:#000,stroke:#000,stroke-width:1px
-    style G2 fill:#22d3ee,color:#000,stroke:#000,stroke-width:1px
-    style G3 fill:#22d3ee,color:#000,stroke:#000,stroke-width:1px
-   
-    %% CORES DAS SETAS POR ÁREA
-   
-    %% SETAS PRINCIPAIS DO COORDENADOR PARA AS ÁREAS
-    linkStyle 0 stroke:#f59e0b,stroke-width:2px  
-    %% Gestão: Laranja
-    linkStyle 1 stroke:#10b981,stroke-width:2px  
-    %% Marketing: Verde
-    linkStyle 2 stroke:#8b5cf6,stroke-width:2px  
-    %% Design: Roxo
-    linkStyle 3 stroke:#ef4444,stroke-width:2px  
-    %% Desenvolvimento: Vermelho
-    linkStyle 4 stroke:#f97316,stroke-width:2px  
-    %% Infraestrutura: Laranja Escuro
-    linkStyle 5 stroke:#06b6d4,stroke-width:2px  
-    %% Suporte: Azul
-   
-
-    %% SUB GESTÃO
-
-    linkStyle 6 stroke:#f59e0b,stroke-width:2px  
-    %% Gestão → DASH (B1 → C1)
-    linkStyle 7 stroke:#f59e0b,stroke-width:2px
-    %% Gestão → analise (B2 → C2)
-    linkStyle 8 stroke:#f59e0b,stroke-width:2px  
-    %% Marketing → consolidação (C3 → D1)
-
-
-    %% SUB MARKETING  
-
-
-    linkStyle 9 stroke:#10b981,stroke-width:2px
-    %% --------------------------- Marketing → GESTÃO (C4 → E2)
-    linkStyle 10 stroke:#10b981,stroke-width:2px
-    %% Design → ECOMERC (D1 → E2)
-    linkStyle 11 stroke:#10b981,stroke-width:2px
-    %% Desenvolvimento → CONTEUDO (E2 → F1)
-    linkStyle 12 stroke:#10b981,stroke-width:2px
-    %% Infraestrutura → CONTEUDO (F1 → G1)
-    linkStyle 13 stroke:#10b981,stroke-width:2px
-    %% Suporte → COMUNICAÇÃO (G1 → B2)
-   
-    %% DESING
-    linkStyle 14 stroke:#8b5cf6,stroke-width:2px
-    %% Design → DESING GRAFICO (D4 → G1)
-    linkStyle 15 stroke:#8b5cf6,stroke-width:2px
-    %% DESING → IDENTIDADE VISUAL (E5 → G3)
-    linkStyle 16 stroke:#8b5cf6,stroke-width:2px
-    %% DESIGNER → SINALIZAÇÃO (F2 → E2)
-    linkStyle 17 stroke:#8b5cf6,stroke-width:2px
-    %% DESIGNER → MATERIAIS (F3 → F1)
-    linkStyle 18 stroke:#8b5cf6,stroke-width:2px
-    %% DESIGNER
-
-
-    %% DEV
-    linkStyle 19 stroke:#ef4444,stroke-width:2px
-    linkStyle 20 stroke:#ef4444,stroke-width:2px
-    linkStyle 21 stroke:#ef4444,stroke-width:2px
-    linkStyle 22 stroke:#ef4444,stroke-width:2px
-    linkStyle 23 stroke:#ef4444,stroke-width:2px
-
-
-    %%INFRA
-
-
-    linkStyle 24 stroke:#f97316,stroke-width:2px
-    linkStyle 25 stroke:#f97316,stroke-width:2px
-    linkStyle 26 stroke:#f97316,stroke-width:2px
-
-
-
-
-    %% Suporte
-
-
-    linkStyle 27 stroke:#06b6d4,stroke-width:2px
-    linkStyle 28 stroke:#06b6d4,stroke-width:2px
-    linkStyle 29 stroke:#06b6d4,stroke-width:2px
-
-
-
-
-    %% CRUZAMENTO DE INFO
-    linkStyle 30 stroke:#f59e0b,stroke-width:2px
-    linkStyle 31 stroke:#f59e0b,stroke-width:2px
-    %% --
-    linkStyle 32 stroke:#10b981,stroke-width:2px
-    linkStyle 33 stroke:#10b981,stroke-width:2px
-   
-    %% DESIGNER
-    linkStyle 34 stroke:#8b5cf6,stroke-width:2px
-    %% DEV
-    linkStyle 35 stroke:#ef4444,stroke-width:2px
-    %% INFRA
-    linkStyle 36 stroke:#f97316,stroke-width:2px
-
-
-    %% INFRA
-    linkStyle 37 stroke:#06b6d4,stroke-width:2px
-
-
-    %% INFRA
-    linkStyle 38 stroke:#8b5cf6,stroke-width:2px
-   
-    %% DEV AUTOMAÇÃO
-    linkStyle 39 stroke:#ef4444,stroke-width:2px
-    %% INFRA
-    linkStyle 40 stroke:#f97316,stroke-width:2px
-    linkStyle 41 stroke:#f97316,stroke-width:2px
+    class A coordenador
+    class B,B1,B2,B3 gestao
+    class C,C1,C2,C3,C4,C5 marketing
+    class D,D1,D2,D3,D4,D5 design
+    class E,E1,E2,E3,E4,E5 dev
+    class F,F1,F2,F3 infra
+    class G,G1,G2,G3 suporte
