@@ -1,5 +1,5 @@
 flowchart LR
-    %% COLUNA 1 - COORDENADOR
+    %% COLUNA 1 - DIGITAL
     A[COORDENADOR DIGITAL<br>Daniel Ribeiro]
     
     %% COLUNA 2 - ÁREAS PRINCIPAIS
@@ -68,18 +68,91 @@ flowchart LR
     C5 -.->|Publica atualizações| C4
     C4 -.->|Comunica ao mercado| G1
 
-    classDef coordenador fill:#1e3a8a,color:#fff,stroke:#000,stroke-width:2px
-    classDef gestao fill:#f59e0b,color:#fff,stroke:#000,stroke-width:2px
-    classDef marketing fill:#10b981,color:#fff,stroke:#000,stroke-width:2px
-    classDef design fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:2px
-    classDef dev fill:#ef4444,color:#fff,stroke:#000,stroke-width:2px
-    classDef infra fill:#f97316,color:#fff,stroke:#000,stroke-width:2px
-    classDef suporte fill:#06b6d4,color:#fff,stroke:#000,stroke-width:2px
+    %% ESTILOS COM CORES - TODAS AS CAIXAS
+    style A fill:#1e3a8a,color:#fff,stroke:#000,stroke-width:3px
+    
+    style B fill:#f59e0b,color:#fff,stroke:#000,stroke-width:2px
+    style B1 fill:#f59e0b,color:#fff,stroke:#000,stroke-width:1px
+    style B2 fill:#f59e0b,color:#fff,stroke:#000,stroke-width:1px
+    style B3 fill:#f59e0b,color:#fff,stroke:#000,stroke-width:1px
+    
+    style C fill:#10b981,color:#fff,stroke:#000,stroke-width:2px
+    style C1 fill:#10b981,color:#fff,stroke:#000,stroke-width:1px
+    style C2 fill:#10b981,color:#fff,stroke:#000,stroke-width:1px
+    style C3 fill:#10b981,color:#fff,stroke:#000,stroke-width:1px
+    style C4 fill:#10b981,color:#fff,stroke:#000,stroke-width:1px
+    style C5 fill:#10b981,color:#fff,stroke:#000,stroke-width:1px
+    
+    style D fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:2px
+    style D1 fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:1px
+    style D2 fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:1px
+    style D3 fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:1px
+    style D4 fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:1px
+    style D5 fill:#8b5cf6,color:#fff,stroke:#000,stroke-width:1px
+    
+    style E fill:#ef4444,color:#fff,stroke:#000,stroke-width:2px
+    style E1 fill:#ef4444,color:#fff,stroke:#000,stroke-width:1px
+    style E2 fill:#ef4444,color:#fff,stroke:#000,stroke-width:1px
+    style E3 fill:#ef4444,color:#fff,stroke:#000,stroke-width:1px
+    style E4 fill:#ef4444,color:#fff,stroke:#000,stroke-width:1px
+    style E5 fill:#ef4444,color:#fff,stroke:#000,stroke-width:1px
+    
+    style F fill:#f97316,color:#fff,stroke:#000,stroke-width:2px
+    style F1 fill:#f97316,color:#fff,stroke:#000,stroke-width:1px
+    style F2 fill:#f97316,color:#fff,stroke:#000,stroke-width:1px
+    style F3 fill:#f97316,color:#fff,stroke:#000,stroke-width:1px
+    
+    style G fill:#06b6d4,color:#fff,stroke:#000,stroke-width:2px
+    style G1 fill:#06b6d4,color:#fff,stroke:#000,stroke-width:1px
+    style G2 fill:#06b6d4,color:#fff,stroke:#000,stroke-width:1px
+    style G3 fill:#06b6d4,color:#fff,stroke:#000,stroke-width:1px
 
-    class A coordenador
-    class B,B1,B2,B3 gestao
-    class C,C1,C2,C3,C4,C5 marketing
-    class D,D1,D2,D3,D4,D5 design
-    class E,E1,E2,E3,E4,E5 dev
-    class F,F1,F2,F3 infra
-    class G,G1,G2,G3 suporte
+    %% CORES DAS SETAS PRINCIPAIS
+    linkStyle 0 stroke:#f59e0b,stroke-width:2px
+    linkStyle 1 stroke:#10b981,stroke-width:2px
+    linkStyle 2 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 3 stroke:#ef4444,stroke-width:2px
+    linkStyle 4 stroke:#f97316,stroke-width:2px
+    linkStyle 5 stroke:#06b6d4,stroke-width:2px
+    
+    %% CORES DAS SETAS SECUNDÁRIAS
+    linkStyle 6 stroke:#f59e0b,stroke-width:2px
+    linkStyle 7 stroke:#f59e0b,stroke-width:2px
+    linkStyle 8 stroke:#f59e0b,stroke-width:2px
+    linkStyle 9 stroke:#10b981,stroke-width:2px
+    linkStyle 10 stroke:#10b981,stroke-width:2px
+    linkStyle 11 stroke:#10b981,stroke-width:2px
+    linkStyle 12 stroke:#10b981,stroke-width:2px
+    linkStyle 13 stroke:#10b981,stroke-width:2px
+    linkStyle 14 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 15 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 16 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 17 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 18 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 19 stroke:#ef4444,stroke-width:2px
+    linkStyle 20 stroke:#ef4444,stroke-width:2px
+    linkStyle 21 stroke:#ef4444,stroke-width:2px
+    linkStyle 22 stroke:#ef4444,stroke-width:2px
+    linkStyle 23 stroke:#ef4444,stroke-width:2px
+    linkStyle 24 stroke:#f97316,stroke-width:2px
+    linkStyle 25 stroke:#f97316,stroke-width:2px
+    linkStyle 26 stroke:#f97316,stroke-width:2px
+    linkStyle 27 stroke:#06b6d4,stroke-width:2px
+    linkStyle 28 stroke:#06b6d4,stroke-width:2px
+    linkStyle 29 stroke:#06b6d4,stroke-width:2px
+    
+    %% CORES DAS SETAS CRUZADAS
+    linkStyle 30 stroke:#f59e0b,stroke-width:2px
+    linkStyle 31 stroke:#10b981,stroke-width:2px
+    linkStyle 32 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 33 stroke:#ef4444,stroke-width:2px
+    linkStyle 34 stroke:#f97316,stroke-width:2px
+    linkStyle 35 stroke:#06b6d4,stroke-width:2px
+    linkStyle 36 stroke:#8b5cf6,stroke-width:2px
+    linkStyle 37 stroke:#ef4444,stroke-width:2px
+    linkStyle 38 stroke:#f97316,stroke-width:2px
+    linkStyle 39 stroke:#f97316,stroke-width:2px
+    linkStyle 40 stroke:#f59e0b,stroke-width:2px
+    linkStyle 41 stroke:#f59e0b,stroke-width:2px
+    linkStyle 42 stroke:#10b981,stroke-width:2px
+    linkStyle 43 stroke:#10b981,stroke-width:2px
